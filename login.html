@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale-1 />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso</title>
+<style>
+.comam{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(107, 194, 141), rgb(38, 102, 59));
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    width: auto;
+}
+fieldset{
+    border: 3px solid rgb(45, 136, 65);
+    border-radius: 15px;
+}
+legend{
+    border: 1px solid rgb(45, 136, 65);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(45, 136, 65);
+}
+.inputbox{
+    position: center;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+
+}
+.labelInput{
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+
+}
+#submit{
+    background-image: linear-gradient(to right, rgb(107, 194, 141), rgb(38, 102, 59));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(118, 212, 154), rgb(53, 136, 81));
+}
+
+</style>
+</head>
+
+<body class="comam">
+    <div class="box">
+<form action="">
+        <fieldset>
+        <legend><b>Login</b></legend>
+        <br><br>
+        <div class="imputBox">
+            <input type="text" name="nome" id="nome" class="inputUser" required>
+            <label for="nome" class="labelInput">Nome Associado</label>
+        </div>
+        <br><br>
+        <div class="imputBox">
+            <input type="text" name="email" id="email" class="inputUser" required>
+            <label for="nome" class="labelInput">Email Associado</label>
+        </div>
+        <br><br>
+        <div class="imputBox">
+            <input type="text" name="Telefone" id="Telefone" class="inputUser" required>
+            <label for="nome" class="labelInput">Telefone</label>
+        </div>
+        <br><br>
+        <div class="imputBox">
+            <input type="text" name="Matricula" id="Matricula" class="inputUser" required>
+            <label for="nome" class="labelInput">Matricula associado</label>
+        </div>   
+        <br><br>
+        <input type="submit" name="submit" id="submit">
+        <br><br>
+        </fieldset>
+</form>
+    </div>
+    
+</body>
+</html>
